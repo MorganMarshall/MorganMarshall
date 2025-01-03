@@ -1,1 +1,2 @@
-## the bamboo bends with the wind
+## "You are not a drop in the ocean, you are the ocean in a drop."
+### -Rumi
