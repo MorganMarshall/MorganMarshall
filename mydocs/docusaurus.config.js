@@ -15,15 +15,15 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://morganmarshall.dev",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "morganmasrshall", // Usually your GitHub org/user name.
+  projectName: "mydocs", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -74,23 +74,17 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/morganmarshall-social-card.png",
       navbar: {
-        title: "My Site",
+        title: "Morgan Marshall",
         logo: {
           alt: "My Site Logo",
           src: "img/logo.svg",
         },
         items: [
-          {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "Tutorial",
-          },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/MorganMarshall",
             label: "GitHub",
             position: "right",
           },
@@ -100,28 +94,15 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/imorganmarshall/",
               },
               {
                 label: "X",
-                href: "https://x.com/docusaurus",
+                href: "https://x.com/imorganmarshall",
               },
             ],
           },
@@ -134,12 +115,12 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/MorganMarshall",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `${new Date().getFullYear()} Morgan Marshall`,
       },
       prism: {
         theme: prismThemes.github,
