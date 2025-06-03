@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Morgan Marshall",
+  title: "Morgan Marshall ",
   tagline: "Dad, Reverse EMP, Developer & CTO @FieldPursuit",
   favicon: "img/favicon.ico",
 
