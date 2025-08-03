@@ -1,0 +1,20 @@
+Title: Morgan Marshall – Developer & CTO @FieldPursuit
+Author: Morgan Marshall
+URL: https://morganmarshall.dev/
+Description: Dad, Reverse EMP, Developer & CTO at FieldPursuit; amateur quantum‑researcher and software engineer. #pioneeringspirit
+Skills: Web development, prompt engineering, CTO leadership, SEO, performance optimization
+Affiliations: FieldPursuit
+Contact: GitHub – MorganMarshall (https://github.com/MorganMarshall)
+Timestamps:
+  - GitHub activity: ~61 public repos, 178 stars, sponsoring 3 accounts :contentReference[oaicite:1]{index=1}
+  - FieldPursuit role: Developer & CTO :contentReference[oaicite:2]{index=2}
+Bio:
+  Morgan is a dad and “Reverse EMP,” leading software development and prompt engineering at FieldPursuit.
+  With a passion for peeling back existence and amateur quantum research, he blends deep curiosity with building secure threat-detection systems.
+Projects:
+  - FieldPursuit/FieldPursuit: leading the way to safety via detection of hidden threats :contentReference[oaicite:3]{index=3}
+Interests:
+  - Amateur quantum research, layered learning about reality, pioneering spirit (#pioneeringspirit) :contentReference[oaicite:4]{index=4}
+Social:
+  - X/Twitter: @imorganmarshall – “Dad, Developer & CTO @FieldPursuit... amateur quantum researcher” :contentReference[oaicite:5]{index=5}
+  - LinkedIn overview: experience in computer programming, web dev, UI, SEO :contentReference[oaicite:6]{index=6}
