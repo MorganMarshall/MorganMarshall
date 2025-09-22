@@ -15,6 +15,7 @@ export default defineConfig({
     hostname: "https://morganmarshall.dev",
   },
   head: [
+    ["link", { rel: "icon", href: "/favicon.ico" }],
     [
       "script",
       { type: "application/ld+json" },
@@ -25,7 +26,6 @@ export default defineConfig({
         name: "Morgan Marshall",
       }),
     ],
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
     [
       "meta",
       {
