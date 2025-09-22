@@ -10,6 +10,6 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
-    "mark.js": "^8.11.1"
+    "mark.js": "8.11.1"
   }
 }
