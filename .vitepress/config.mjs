@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  srcExclude: ['**/README.md'],
+  srcExclude: ['README.md'],
   base: "/",
   cleanUrls: true,
   ignoreDeadLinks: true,
