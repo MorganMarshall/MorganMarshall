@@ -11,5 +11,8 @@
   },
   "dependencies": {
     "mark.js": "8.11.1"
+  },
+  "resolutions": {
+    "mark.js": "8.11.1"
   }
 }
