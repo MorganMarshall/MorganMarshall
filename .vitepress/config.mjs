@@ -83,9 +83,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    search: {
-      provider: "local",
-    },
+
     // https://vitepress.dev/reference/default-theme-config
     // logo: { src: "/logo.svg", alt: "Morgan Marshall Logo" },
     nav: [{ text: "Home", link: "/" }],
