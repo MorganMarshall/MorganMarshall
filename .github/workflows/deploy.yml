@@ -39,16 +39,14 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 22
-          cache: yarn # or pnpm / yarn
+          node-version: latest
+          cache: npm # or pnpm / yarn
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: yarn install # or pnpm install / yarn install / bun install / npm ci
-      - name: Install mark.js # Pin mark.js to 8.11.1 
-        run: yarn add mark.js@8.11.1 --save-exact
+        run: npm ci # or pnpm install / yarn install / bun install / npm ci
       - name: Build with VitePress
-        run: yarn docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build / npm run docs:build
+        run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build / npm run docs:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

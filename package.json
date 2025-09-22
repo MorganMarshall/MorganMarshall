@@ -8,11 +8,5 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build && node build_scripts/optimize-css.js",
     "docs:preview": "vitepress preview"
-  },
-  "dependencies": {
-    "mark.js": "8.11.1"
-  },
-  "resolutions": {
-    "mark.js": "8.11.1"
   }
 }
