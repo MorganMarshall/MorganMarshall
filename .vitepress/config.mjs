@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+// Auto-generate sidebar items from /docs/blog
+import { getBlogSidebar } from "./blogSidebar.js";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -81,9 +83,31 @@ export default defineConfig({
   ],
 
   themeConfig: {
+    search: {
+      provider: "local",
+    },
     // https://vitepress.dev/reference/default-theme-config
     // logo: { src: "/logo.svg", alt: "Morgan Marshall Logo" },
     nav: [{ text: "Home", link: "/" }],
+
+    // footer: {
+    //   message: "",
+    //   copyright: "",
+    // },
+
+    // GENERATE SIDEBAR FROM blogSidebar.js
+    // sidebar: {
+    //   "/": [
+    //     {
+    //       text: "Examples",
+    //       items: [
+    //         { text: "Markdown Examples", link: "/markdown-examples" },
+    //         { text: "Runtime API Examples", link: "/api-examples" },
+    //       ],
+    //     },
+    //   ],
+    //   "/blog/": getBlogSidebar(),
+    // },
 
     socialLinks: [
       {
