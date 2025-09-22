@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 // Auto-generate sidebar items from /docs/blog
-import { getBlogSidebar } from "./blogSidebar.js";
+//import { getBlogSidebar } from "./blogSidebar.js";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
