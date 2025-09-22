@@ -25,7 +25,7 @@ export default defineConfig({
         name: "Morgan Marshall",
       }),
     ],
-
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
     [
       "meta",
       {
