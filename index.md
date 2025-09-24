@@ -4,8 +4,7 @@ layout: home
 hero:
   name: "Hey,"
   text: "I'm Morgan"
-  tagline: 'Dad, Reverse EMP, Developer & CTO <a style="text-decoration:underline;text-decoration-thickness: 3px;
-  text-underline-offset: 0.19em;text-decoration-color: rgba(255, 255, 255, 0.05);" href="https://fieldpursuit.com" target="_blank">@FieldPursuit</a>. Peeling back the layers of existence one at a time, amateur quantum researcher.'
+  tagline: 'Dad, Reverse EMP, Developer & CTO <a style="opacity:0.7" href="https://fieldpursuit.com" target="_blank">@FieldPursuit</a>. Peeling back the layers of existence one at a time, amateur quantum researcher.'
 
 features:
   - icon:
