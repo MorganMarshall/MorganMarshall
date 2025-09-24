@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-import path from "path";
 // Auto-generate sidebar items from /docs/blog
 //import { getBlogSidebar } from "./blogSidebar.js";
 
@@ -139,20 +138,16 @@ export default defineConfig({
     // ],
   },
   vite: {
-    // ✅ safe vendor chunking
     build: {
       target: "esnext", // modern JS reduces polyfills
       cssCodeSplit: true, // split CSS into smaller chunks
       rollupOptions: {
         output: {
           manualChunks(id) {
-            //if (id.includes("node_modules")) return "vendor";
-            if (!id.includes("node_modules")) return; // skip non-node_modules
-            // normalize path to use forward slashes
-            const normalized = id.split(path.sep).join("/");
-            const parts = normalized.split("node_modules/");
-            if (!parts[1]) return; // safety check
-            return parts[1].split("/")[0]; // chunk by package name
+            if (id.includes('node_modules')) {
+              return 'vendor'; // Example: put all node_modules into a 'vendor' chunk
+            }
+            // Add more custom chunking logic as needed
           },
         },
       },
