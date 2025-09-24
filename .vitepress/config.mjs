@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import path from "path";
 // Auto-generate sidebar items from /docs/blog
 //import { getBlogSidebar } from "./blogSidebar.js";
 
@@ -8,7 +9,7 @@ export default defineConfig({
   srcExclude: ["**/README.md"],
   cleanUrls: true,
   ignoreDeadLinks: true,
-  appearance: 'force-dark',
+  appearance: "force-dark",
   title: "morganmarshall.dev",
   description:
     "Dad, Reverse EMP, Developer & CTO @FieldPursuit. Peeling back the layers of existence one at a time, amateur quantum researcher.",
@@ -90,12 +91,10 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     // logo: { src: "/logo.svg", alt: "Morgan Marshall Logo" },
     //nav: [{ text: "Home", link: "/" }],
-
     // footer: {
     //   message: "",
     //   copyright: "",
     // },
-
     // GENERATE SIDEBAR FROM blogSidebar.js
     // sidebar: {
     //   "/": [
@@ -109,7 +108,6 @@ export default defineConfig({
     //   ],
     //   "/blog/": getBlogSidebar(),
     // },
-
     // socialLinks: [
     //   {
     //     icon: {
@@ -141,16 +139,23 @@ export default defineConfig({
     // ],
   },
   vite: {
+    // ✅ safe vendor chunking
     build: {
       target: "esnext", // modern JS reduces polyfills
       cssCodeSplit: true, // split CSS into smaller chunks
-      // rollupOptions: {
-      //   output: {
-      //     manualChunks(id) {
-      //       if (id.includes("node_modules")) return "vendor";
-      //     },
-      //   },
-      // },
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            //if (id.includes("node_modules")) return "vendor";
+            if (!id.includes("node_modules")) return; // skip non-node_modules
+            // normalize path to use forward slashes
+            const normalized = id.split(path.sep).join("/");
+            const parts = normalized.split("node_modules/");
+            if (!parts[1]) return; // safety check
+            return parts[1].split("/")[0]; // chunk by package name
+          },
+        },
+      },
     },
   },
 });
