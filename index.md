@@ -13,7 +13,7 @@ features:
     title: LinkedIn
     details:
     link: https://www.linkedin.com/in/morgan-marshall-837882a9
-    linkText: visitC LinkedIn
+    linkText: visit me on LinkedIn
   - icon:
       src: /github.svg
     title: Github
