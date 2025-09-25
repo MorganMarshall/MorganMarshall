@@ -1,0 +1,5 @@
+
+/* on the home page, hide the social media icons */
+.home .VPSocialLinks {
+  display: none;
+}
