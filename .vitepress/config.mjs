@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 // Auto-generate sidebar items from /docs/blog
-//import { getBlogSidebar } from "./blogSidebar.js";
+import { getBlogSidebar } from "./blogSidebar.js";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -8,7 +8,7 @@ export default defineConfig({
   srcExclude: ["**/README.md"],
   cleanUrls: true,
   ignoreDeadLinks: true,
-  appearance: "force-dark",
+  appearance: "dark",
   title: "morganmarshall.dev",
   description:
     "Dad, Reverse EMP, Developer & CTO @FieldPursuit. Peeling back the layers of existence one at a time, amateur quantum researcher.",
@@ -89,53 +89,53 @@ export default defineConfig({
     // },
     // https://vitepress.dev/reference/default-theme-config
     // logo: { src: "/logo.svg", alt: "Morgan Marshall Logo" },
-    //nav: [{ text: "Home", link: "/" }],
-    // footer: {
-    //   message: "",
-    //   copyright: "",
-    // },
+    nav: [{ text: "Blog", link: "/Blog/" }],
+    footer: {
+      message: "",
+      copyright: "© morganmarshall.dev",
+    },
     // GENERATE SIDEBAR FROM blogSidebar.js
-    // sidebar: {
-    //   "/": [
-    //     {
-    //       text: "Examples",
-    //       items: [
-    //         { text: "Markdown Examples", link: "/markdown-examples" },
-    //         { text: "Runtime API Examples", link: "/api-examples" },
-    //       ],
-    //     },
-    //   ],
-    //   "/blog/": getBlogSidebar(),
-    // },
-    // socialLinks: [
-    //   {
-    //     icon: {
-    //       svg: `
-    //         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" width="24" height="24">
-    //           <title>LinkedIn</title>
-    //           <path fill="currentColor" d="M20.447 20.452H16.89V14.8c0-1.348-.027-3.086-1.882-3.086-1.884 0-2.173 1.47-2.173 2.984v5.754H9.279V9h3.405v1.561h.048c.474-.9 1.635-1.848 3.366-1.848 3.596 0 4.259 2.366 4.259 5.444v6.295zM5.337 7.433a1.956 1.956 0 1 1 0-3.911 1.956 1.956 0 0 1 0 3.911zM6.986 20.452H3.688V9h3.298v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-    //         </svg>
-    //       `,
-    //       ariaLabel: "linkedin",
-    //     },
-    //     link: "https://www.linkedin.com/in/morgan-marshall-837882a9",
-    //   },
-    //   {
-    //     icon: "github",
-    //     link: "https://github.com/MorganMarshall",
-    //     ariaLabel: "github",
-    //   },
-    //   {
-    //     icon: "x",
-    //     link: "https://x.com/imorganmarshall",
-    //     ariaLabel: "x.com",
-    //   },
-    //   {
-    //     icon: "linktree",
-    //     link: "https://linktr.ee/morganmarshall",
-    //     ariaLabel: "linkedin",
-    //   },
-    // ],
+    sidebar: {
+      "/": [
+        {
+          text: "Examples",
+          items: [
+            { text: "Markdown Examples", link: "/markdown-examples" },
+            { text: "Runtime API Examples", link: "/api-examples" },
+          ],
+        },
+      ],
+      "/blog/": getBlogSidebar(),
+    },
+    socialLinks: [
+      {
+        icon: {
+          svg: `
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" width="24" height="24">
+              <title>LinkedIn</title>
+              <path fill="currentColor" d="M20.447 20.452H16.89V14.8c0-1.348-.027-3.086-1.882-3.086-1.884 0-2.173 1.47-2.173 2.984v5.754H9.279V9h3.405v1.561h.048c.474-.9 1.635-1.848 3.366-1.848 3.596 0 4.259 2.366 4.259 5.444v6.295zM5.337 7.433a1.956 1.956 0 1 1 0-3.911 1.956 1.956 0 0 1 0 3.911zM6.986 20.452H3.688V9h3.298v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          `,
+          ariaLabel: "linkedin",
+        },
+        link: "https://www.linkedin.com/in/morgan-marshall-837882a9",
+      },
+      {
+        icon: "github",
+        link: "https://github.com/MorganMarshall",
+        ariaLabel: "github",
+      },
+      {
+        icon: "x",
+        link: "https://x.com/imorganmarshall",
+        ariaLabel: "x.com",
+      },
+      {
+        icon: "linktree",
+        link: "https://linktr.ee/morganmarshall",
+        ariaLabel: "linkedin",
+      },
+    ],
   },
   vite: {
     build: {
