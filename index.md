@@ -1,6 +1,6 @@
 ---
 layout: home
-footer: false
+footer: true
 
 hero:
   name: "Hey,"

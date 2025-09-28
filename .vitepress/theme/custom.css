@@ -3,3 +3,13 @@
 .home .VPSocialLinks {
   display: none;
 }
+
+.blogHeaderImage {
+  width: 33.33%;
+  height: auto;
+}
+
+.image-50-percent {
+  width :50%;
+  height: auto;
+}

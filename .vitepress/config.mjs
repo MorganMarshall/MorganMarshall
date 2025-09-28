@@ -1,11 +1,11 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 // Auto-generate sidebar items from /docs/blog
 import { getBlogSidebar } from "./blogSidebar.js";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/",
-  srcExclude: ["**/README.md"],
+  srcExclude: ["**/README.md", "**/dev_notes"],
   cleanUrls: true,
   ignoreDeadLinks: true,
   appearance: "dark",
@@ -84,27 +84,27 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    // search: {
-    //   provider: "local",
-    // },
+    search: {
+      provider: "local",
+    },
     // https://vitepress.dev/reference/default-theme-config
     // logo: { src: "/logo.svg", alt: "Morgan Marshall Logo" },
-    nav: [{ text: "Blog", link: "/Blog/" }],
+    nav: [{ text: "Blog", link: "/blog/", activeMatch: "^/blog/" }],
     footer: {
       message: "",
-      copyright: "© morganmarshall.dev",
+      copyright: `©${new Date().getFullYear()}  morganmarshall.dev`,
     },
     // GENERATE SIDEBAR FROM blogSidebar.js
     sidebar: {
-      "/": [
-        {
-          text: "Examples",
-          items: [
-            { text: "Markdown Examples", link: "/markdown-examples" },
-            { text: "Runtime API Examples", link: "/api-examples" },
-          ],
-        },
-      ],
+      // "/": [
+      //   {
+      //     text: "Examples",
+      //     items: [
+      //       { text: "Markdown Examples", link: "/markdown-examples" },
+      //       { text: "Runtime API Examples", link: "/api-examples" },
+      //     ],
+      //   },
+      // ],
       "/blog/": getBlogSidebar(),
     },
     socialLinks: [
@@ -136,6 +136,12 @@ export default defineConfig({
         ariaLabel: "linkedin",
       },
     ],
+  },
+  markdown: {
+    image: {
+      // image lazy loading is disabled by default
+      lazyLoading: true,
+    },
   },
   vite: {
     build: {

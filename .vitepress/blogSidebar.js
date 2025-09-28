@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { formatWordOrFile } from './theme/scripts/formatTitle.js';
 
 /**
  * Generates a blog sidebar from a folder
@@ -50,6 +51,8 @@ export function getBlogSidebar(blogFolder = "blog") {
         displayName = name.replace(/-/g, " ");
       }
 
+      displayName = formatWordOrFile(displayName);
+
       return {
         text: displayName,
         link,
@@ -66,7 +69,7 @@ export function getBlogSidebar(blogFolder = "blog") {
 
   return [
     {
-      text: "📃 Blog",
+      text: "📃 Blogs",
       items,
     },
   ];
