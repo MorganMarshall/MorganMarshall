@@ -17,16 +17,16 @@ features:
   - icon:
       src: /github.svg
     title: Github
-    link: https://www.linkedin.com/in/morgan-marshall-837882a9
+    link: https://github.com/MorganMarshall
     linkText: visit me on Github
   - icon:
       src: /linktree.svg
     title: Linktree
-    link: https://www.linkedin.com/in/morgan-marshall-837882a9
+    link: https://linktr.ee/morganmarshall
     linkText: visit me on Linktree
   - icon:
       src: /x.svg
     title: X
-    link: https://www.linkedin.com/in/morgan-marshall-837882a9
+    link: https://x.com/imorganmarshall
     linkText: visit me on X
 ---
