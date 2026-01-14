@@ -5,7 +5,7 @@ footer: true
 hero:
   name: "Hey,"
   text: "I'm Morgan"
-  tagline: 'Dad, Reverse EMP, Developer & CTO <a href="https://fieldpursuit.com" target="_blank">@FieldPursuit</a>. Peeling back the layers of existence one at a time, amateur quantum researcher.'
+  tagline: 'Dad, Reverse EMP, Developer & CTO <a href="https://fieldpursuit.com" target="_blank">@FieldPursuit</a>. Peeling back the layers of existence one at a time. Amateur quantum researcher.'
 
 features:
   - icon:
