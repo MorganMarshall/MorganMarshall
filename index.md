@@ -108,22 +108,26 @@ hero:
 features:
   - icon:
       src: /linkedin.svg
+      alt: "LinkedIn logo"
     title: LinkedIn
     details:
-    link: https://www.linkedin.com/in/morgan-marshall-837882a9
+    link: https://www.linkedin.com/in/imorganmarshall
     linkText: visit me on LinkedIn
   - icon:
       src: /github.svg
+      alt: "Github logo"
     title: Github
     link: https://github.com/MorganMarshall
     linkText: visit me on Github
   - icon:
       src: /linktree.svg
+      alt: "Linktree logo"
     title: Linktree
     link: https://linktr.ee/morganmarshall
     linkText: visit me on Linktree
   - icon:
       src: /x.svg
+      alt: "X logo"
     title: X
     link: https://x.com/imorganmarshall
     linkText: visit me on X
